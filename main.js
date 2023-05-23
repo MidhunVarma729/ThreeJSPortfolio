@@ -1,6 +1,10 @@
 import './assets/css/style.css';
 import * as THREE from 'three';
-import { OrbitControls } from 'OrbitControls';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import earthImg from './assets/img/earth.jpg'
+import sunImg from './assets/img/sun.jpg'
+import spaceImg from './assets/img/space.jpg'
+import g1Img from './assets/img/g1.png'
 
 //  Three most important compontent: Scene, camera, renderer.
 const scene = new THREE.Scene();
@@ -82,10 +86,10 @@ function addStar(){
 
 Array(300).fill().forEach(addStar); 
 
-const spaceTexture =  new THREE.TextureLoader().load('../assets/img/space.jpg');
+const spaceTexture =  new THREE.TextureLoader().load(spaceImg);
 scene.background =  spaceTexture;
 
-const gojoTexture = new THREE.TextureLoader().load('../assets/img/g1.png');
+const gojoTexture = new THREE.TextureLoader().load(g1Img);
 
 const gojo = new THREE.Mesh(
   new THREE.BoxGeometry(3,3,3),
@@ -94,18 +98,16 @@ const gojo = new THREE.Mesh(
 
 scene.add(gojo);
 
-const moonTexture = new THREE.TextureLoader().load('../assets/img/earth.jpg');
-const normalTexture = new THREE.TextureLoader().load('../assets/img/normal.jpg');
+const moonTexture = new THREE.TextureLoader().load(earthImg);
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3,32,32),
   new THREE.MeshStandardMaterial({
     map:moonTexture,
-    normalMap: normalTexture,
   })
 )
 
-const sunTexture = new THREE.TextureLoader().load('../assets/img/sun.jpg');
+const sunTexture = new THREE.TextureLoader().load(sunImg);
 
 const sun = new THREE.Mesh(
   new THREE.SphereGeometry(3,32,32),
