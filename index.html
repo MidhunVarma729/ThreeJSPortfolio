@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="./assets/img/me.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <canvas id="bg"></canvas>
+    <main>
+
+      <header>
+        <h1>I'm Midhun Varma</h1>
+        <p>Welcome to the Infinity!♾️</p>
+      </header>
+
+
+      <blockquote>
+        <p>I'm a developer and a designer.</p>
+      </blockquote>
+
+      <section class="hobbies">
+        <h2>📜What do I do?</h2>
+        <h3>E-Cell IIIT Pune👾</h3>
+        <p>
+          Being a part of E-Cell IIIT Pune has been one heck of a ride. From online shenanigans to offline adventures, we've done it all. We hosted a ton of online events in the past. But guess what? The last two events, "Ideathon 2k22" and "E-Summit'23," were held offline, and man, did we have a wild time! And let me tell you, my fellow entrepreneurs, we're just getting started.
+        </p>
+        <h3>Skills you say?🥸</h3>
+        <p>
+          I'm in a perpetual state of career confusion, like a squirrel trying to choose between acorns. 🐿️ Last year, I dabbled in the realms of Machine Learning and AI. Then there's this competitive programming and DSA stuff—I try to keep up with it, but let's be honest, my consistency is about as reliable as a snoozing alarm clock. ⏰ But where I really shine is in the world of development. I've got my hands dipped in both the Flask Framework and the MERN Stack. 🌟 I'm currently in a passionate love affair with JavaScript. 💘
+
+Now, I'm itching to explore the vast expanses of Cloud Technology, Blockchain, and whatever other shiny new toys are out there. I can't resist the temptation—I mean, who wants to miss out on all the fun when there's a whole world of possibilities just waiting to be tinkered with? 🌐
+        </p>
+          <h3>Any other stuff? Sure🤩</h3>
+        <p>  
+I watch a lot of anime, series, and movies just like everyone. If you are an anime fan, dial me up instantly. We can engage in some epic anime banter. I do listen to a lot of music, enjoy spending time in nature. I hit the gym regularly, or at least, I try to. 
+        </p>
+
+      </section>
+
+      <section class="light">
+        <h2>👩🏽‍🚀 Projects</h2>
+
+        <h3>Web Scraping and Automation</h3>
+        <p>
+          I've made several bots using Beautiful Soup and Selenium, the dynamic duo of web scraping and automation! Few of them include Spotify Playlist Maker, LinkedIn Job Applier, Amazon Price Drop alert bot, etc.. 
+        </p>
+
+        <h3>
+          NLP and Deep Learning
+        </h3>
+        <p>
+          Together with my team, we embarked on a groundbreaking project called "Query Assist." This endeavor focuses on transforming user input in natural language into SQL queries, facilitating seamless implementation on databases. Furthermore, we conducted an in-depth comparative study of different transformers for image retrieval tasks.
+        </p>
+        <h3>MERN Stack and Flask</h3>
+        <p>
+         I've built a dynamic blog website using Flask framework, offering features such as user authentication, comments, and social media sharing. I also developed a YouTube clone using the MERN stack, providing users with video viewing, commenting, and personalized recommendations. Moreover, I created a professional real estate website with advanced search filters, detailed property listings, and integrated Google Maps using the MERN stack.
+        </p>
+
+      </section>
+
+      <blockquote>
+        <p>"100 pushups, 100 sit-ups, 100 squats, and a 10km run!"<br> — Saitama Sensei</p>
+      </blockquote>
+
+      <section class="left">
+        <h2>Let's have some Udon🍝</h2>
+        <div style="width: 50%; float:left">
+          <img src="./assets/img/udon.jpg" alt="saitama" width="100%" >
+       </div>
+       
+       <div style="width: 40%; float:right">
+        <form id="contact_form" action="mailto:midhun5varma2@gmail.com" method="POST" enctype="multipart/form-data">
+          <div class="row">
+            <label class="required" for="name">Your name:</label><br />
+            <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+            <span id="name_validation" class="error_message"></span>
+          </div>
+          <div class="row">
+            <label class="required" for="email">Your email:</label><br />
+            <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+            <span id="email_validation" class="error_message"></span>
+          </div>
+          <div class="row">
+            <label class="required" for="message">Your message:</label><br />
+            <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+            <span id="message_validation" class="error_message"></span>
+          </div>
+            
+            <input id="submit_button" type="submit" value="Send email" class="btn" />
+        </form>
+       </div>        
+      </section>
+
+      <blockquote>
+        <p>What’s the matter? You don’t like Udon?</p>
+      </blockquote>
+
+    </main>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
+
